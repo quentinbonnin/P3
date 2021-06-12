@@ -2,7 +2,7 @@
 .main-title {
   margin-left: $spacing-base;
   &__link {
-    width: 90%;
+    width: $xl-pourcentage;
     display: flex;
     height: $height-link;
     align-items: center;
@@ -31,7 +31,7 @@
     color: white;
   }
   &__button {
-    font-size: .8rem;
+    font-size: $font-size-xss;
     border: none;
   }
   &__logo {
@@ -41,7 +41,7 @@
   }
 }
 .group-card{
-    width: 90%;
+    width: $xl-pourcentage;
     margin-left: auto;
     margin-right: auto;
 }
@@ -101,32 +101,32 @@
 }
 .main {
   position: relative;
-  top: 9rem;
-  border-radius: 1rem;
+  top: $top-main;
+  border-radius: $spacing-base;
   background-color: white;
   width: 100%;
   background-color: rgb(245, 244, 244);
   &__title {
-    padding-top: 1rem;
+    padding-top: $spacing-base;
     font-family: Shrikhand;
-    font-size: 1.5rem;
-    padding-left: 1rem;
+    font-size: $font-size-base;
+    padding-left: $spacing-base;
   }
   &__subtitle {
     font-weight: 200;
-    margin-left: 1rem;
+    margin-left: $spacing-base;
     border-bottom: solid 2px #99E2D0;
-    width: 2rem;
+    width: $spacing-xl;
   }
   &__button {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    height: 3rem;
+    height: $spacin-xxl;
     align-items: center;
-    width: 50%;
+    width: $mid-pourcentage;
     justify-content: center;
-    border-radius: 2rem;
+    border-radius: $spacing-xl;
     color: white;
     border: none;
     background: linear-gradient(
@@ -134,21 +134,21 @@
       rgba(147, 86, 220, 1) 37%,
       rgba(255, 121, 218, 1) 98%
     );
-    box-shadow: 3px 3px 10px -6px #000000;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    box-shadow: $box-shadow;
+    margin-top: $spacing-xl;
+    margin-bottom: $spacing-xl;
     &:hover {
       opacity: 0.8;
-      box-shadow: inset 0px 0px 5px 0px #000000;
+      box-shadow: $inset-box-shadow;
     }
   }
 }
 .main-card {
-  box-shadow: 3px 3px 10px -6px #000000;
-  border-radius: 1rem;
-  margin: 0 0.5rem;
+  box-shadow: $box-shadow;
+  border-radius: $spacing-base;
+  margin: 0 $spacing-xs;
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: $spacing-base;
   background-color: white;
   animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
   &:hover{
@@ -162,31 +162,31 @@
     }
   }
   &__title {
-    margin: 0.5rem 0;
+    margin: $spacing-xs 0;
   }
   &__info {
-    margin-left: 1rem;
-    width: 90%;
+    margin-left: $spacing-base;
+    width: $xl-pourcentage;
   }
   &__plat {
-    margin: 0.5rem 0;
-    font-size: 0.8rem;
+    margin: $spacing-xs 0;
+    font-size: $font-size-xss;
     font-weight: 200;
   }
   &__price {
-    margin: 0.5rem 0;
-    padding-right: 1rem;
-    font-size: 0.8rem;
+    margin: $spacing-xs 0;
+    padding-right: $spacing-base;
+    font-size: $font-size-xss;
     display: flex;
     align-items: flex-end;
-    width: 10%;
+    width: $xxs-pourcentage;
     justify-content: flex-end;
   }
   &__animation{
     display: none;
-    width: 20%;
+    width: $xs-pourcentage;
     background-color: #99E2D0;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 0 $spacing-base $spacing-base 0;
     &:hover{
       display: flex;
       animation: left 2s;
@@ -201,10 +201,10 @@
   }
 }
 .card__heart{
-  width: 2rem;
+  width: $spacing-xl;
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: $spacing-base;
+  right: $spacing-base;
   &__full{
     fill: transparent;
     &:hover{

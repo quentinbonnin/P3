@@ -1,10 +1,10 @@
 @import "./theme.scss";
 .header-title {
   display: flex;
-  width: 80%;
+  width: $width-header;
   margin: $spacing-base auto 0 auto;
   &__logo {
-    width: 50%;
+    width: $mid-pourcentage;
     margin: auto;
   }
 }
@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: $width-header;
   margin-left: auto;
   margin-right: auto;
   &__subtitle {
@@ -72,22 +72,22 @@
   top: 0;
   &__quart{
     position: relative;
-    top: 50%;
+    top: $mid-pourcentage;
     margin: auto;
-    width: 75px;
-    height: 75px;
+    width: $px-loading-page;
+    height: $px-loading-page;
     display: block;
-    border-radius: 50px;
+    border-radius: $px-loading-page;
     border: solid 10px rgba(190, 190, 190, 0.6);
   }
   &__quart::after{
     content: '';
     position: absolute;
-    height: 75px;
-    width: 75px;
+    height: $px-loading-page;
+    width: $px-loading-page;
     top: -10px;
     left: -10px;
-    border-radius: 75px;
+    border-radius: $px-loading-page;
     border: solid 10px transparent;
     border-top-color:$primary ;
     animation: spin 1s linear 0s infinite;
@@ -95,22 +95,22 @@
   }
 .header{
     display: flex;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-top: $spacing-xs;
+    margin-bottom: $spacing-xs;
     align-items: center;
     &__img{
-        margin-left: 0.5rem;
+        margin-left: $spacing-xs;
     }
     &__logo{
-        width: 50%;
+        width: $mid-pourcentage;
         margin: auto;
     }
     &__restaurant{
         width: 100%;
         position: absolute;
         object-fit: cover;
-        min-height: 11rem;
-        max-height: 11rem;
+        min-height: $min-max-height-header-restaurant;
+        max-height: $min-max-height-header-restaurant;
     }
 }
   

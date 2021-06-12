@@ -76,7 +76,7 @@
   width: 75px;
   height: 75px;
   display: block;
-  border-radius: 50px;
+  border-radius: 75px;
   border: solid 10px rgba(190, 190, 190, 0.6);
 }
 .loading-page__quart::after {
