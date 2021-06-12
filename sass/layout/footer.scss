@@ -1,0 +1,34 @@
+@import "./theme.scss";
+
+.footer{
+    background-color: rgb(43, 43, 43);
+    padding-left: $spacing-base;
+    padding-top: $spacing-base;
+    padding-bottom: $spacing-base;
+    &__title{
+        color: white;
+        font-family: Shrikhand;
+    }
+    &__nav{
+        display: flex;
+        flex-direction: column;
+    }
+    &__link{
+        color: white;
+        text-decoration: none;
+        margin-bottom: $spacing-xs;
+    }
+    &__logo{
+        color: white;
+        width: $width-footer-logo;
+        padding-right: $spacing-xs;
+        font-size: $font-size-xss;
+    }
+    &__info{
+        margin-bottom: $spacing-xs;
+    }
+}
+.footer-menu{
+    position: relative;
+    top: 9rem;
+}

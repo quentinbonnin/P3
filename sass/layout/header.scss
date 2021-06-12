@@ -1,0 +1,122 @@
+@import "./theme.scss";
+.header-title {
+  display: flex;
+  width: 80%;
+  margin: $spacing-base auto 0 auto;
+  &__logo {
+    width: 50%;
+    margin: auto;
+  }
+}
+.header-localisation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: $header-localisation-box;
+  background-color: rgb(236, 236, 236);
+  margin-bottom: $spacing-base;
+  margin-top: $spacing-xs;
+  &__title {
+    padding-left: $spacing-base;
+    font-size: $font-size-xs;
+    margin-right: $spacing-base;
+  }
+}
+.header-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  &__subtitle {
+    margin: 0;
+    text-align: center;
+    margin: $spacing-xl 0 $spacing-xs 0;
+  }
+  &__text {
+    text-align: center;
+    margin-bottom: $spacing-xl;
+    font-weight: 200;
+  }
+  &__button {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    font-size: $font-size-xs;
+    color: white;
+    height: $height-button;
+    align-items: center;
+    border-radius: $spacing-xl;
+    background: linear-gradient(
+      350deg,
+      rgba(147, 86, 220, 1) 37%,
+      rgba(255, 121, 218, 1) 98%
+    );
+    border: none;
+    box-shadow: $box-shadow;
+    &:hover{
+        opacity: $opacity-header;
+        box-shadow: $inset-box-shadow;
+    }
+  }
+}
+.loading-page{
+  position: fixed;
+  display: none;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  opacity: .7;
+  top: 0;
+  &__quart{
+    position: relative;
+    top: 50%;
+    margin: auto;
+    width: 75px;
+    height: 75px;
+    display: block;
+    border-radius: 50px;
+    border: solid 10px rgba(190, 190, 190, 0.6);
+  }
+  &__quart::after{
+    content: '';
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    top: -10px;
+    left: -10px;
+    border-radius: 75px;
+    border: solid 10px transparent;
+    border-top-color:$primary ;
+    animation: spin 1s linear 0s infinite;
+  }
+  }
+.header{
+    display: flex;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    align-items: center;
+    &__img{
+        margin-left: 0.5rem;
+    }
+    &__logo{
+        width: 50%;
+        margin: auto;
+    }
+    &__restaurant{
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        min-height: 11rem;
+        max-height: 11rem;
+    }
+}
+  
+  @keyframes spin {
+    0%{transform: rotate(0deg); border-top-color: $primary;}
+    50%{border-top-color: $secondary;}
+    100%{transform: rotate(360deg); border-top-color: $tertiaire;}
+  }
+
