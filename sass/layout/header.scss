@@ -90,8 +90,8 @@
     position: absolute;
     height: $width-height-loading;
     width: $width-height-loading;
-    top: -10px;
-    left: -10px;
+    top: $top-left-loading-page;
+    left: $top-left-loading-page;
     border-radius: $border-radius-loading;
     border-top-color:$primary ;
     border: $border-loading-transparent;
