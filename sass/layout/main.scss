@@ -1,8 +1,12 @@
 @import "./theme.scss";
+
+.main-home{
+  position: relative;
+}
 .main-title {
   margin-left: $spacing-base;
   &__link {
-    width: $xl-pourcentage;
+    width: $xxl-pourcent;
     display: flex;
     height: $height-link;
     align-items: center;
@@ -14,7 +18,7 @@
     margin-bottom: $spacing-base;
     box-shadow: $box-shadow;
     &:hover{
-      background-color: rgb(242, 235, 247);
+      background-color: $color-hover-link;
       .main-title__logo{
         color: $primary;
       }
@@ -22,13 +26,13 @@
   }
   &__number {
     position: absolute;
-    left: -12px;
-    border: solid 1px;
+    left: $position-number;
+    border: $border-base;
     border-radius: $spacing-base;
     padding: $padding-number ;
     font-size: $fon-size-number;
     background-color: $primary;
-    color: white;
+    color: $color-white;
   }
   &__button {
     font-size: $font-size-xss;
@@ -41,7 +45,7 @@
   }
 }
 .group-card{
-    width: $xl-pourcentage;
+    width: $xxl-pourcent;
     margin-left: auto;
     margin-right: auto;
 }
@@ -51,7 +55,8 @@
     position: relative;
     margin-bottom: $spacing-base;
     &:hover{
-      transform: scale(1.05);
+      transform: scale(1.02);
+      transition: 0.3s;
     }
     &__info{
         position: relative;
@@ -89,9 +94,9 @@
     }
     &__new{
         position: absolute;
-        background-color: rgb(149, 224, 212);
+        background-color: $back-color-card-new;
         right: $spacing-xl;
-        color: rgb(71, 145, 126);
+        color: $color-card-new;
         padding: $paddin-heart;
         font-size: $font-size-xss;
         font-weight: bold;
@@ -101,11 +106,10 @@
 }
 .main {
   position: relative;
-  top: $top-main;
+  top: $top-footer;
   border-radius: $spacing-base;
-  background-color: white;
   width: 100%;
-  background-color: rgb(245, 244, 244);
+  background-color: $back-color-main;
   &__title {
     padding-top: $spacing-base;
     font-family: Shrikhand;
@@ -115,7 +119,7 @@
   &__subtitle {
     font-weight: 200;
     margin-left: $spacing-base;
-    border-bottom: solid 2px #99E2D0;
+    border-bottom: $border-xl $tertiaire;
     width: $spacing-xl;
   }
   &__button {
@@ -124,15 +128,15 @@
     margin-right: auto;
     height: $spacin-xxl;
     align-items: center;
-    width: $mid-pourcentage;
+    width: $mid-pourcent;
     justify-content: center;
     border-radius: $spacing-xl;
-    color: white;
+    color: $color-white;
     border: none;
     background: linear-gradient(
       350deg,
-      rgba(147, 86, 220, 1) 37%,
-      rgba(255, 121, 218, 1) 98%
+      $first-color-button 37%,
+      $second-color-button 98%
     );
     box-shadow: $box-shadow;
     margin-top: $spacing-xl;
@@ -149,7 +153,7 @@
   margin: 0 $spacing-xs;
   display: flex;
   margin-bottom: $spacing-base;
-  background-color: white;
+  background-color: $color-white;
   animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
   &:hover{
     transform: scale(1.01);
@@ -158,20 +162,27 @@
     }
     .main-card__animation{
       display: flex;
-      animation: left 2s;
+      animation: left 1s;
     }
   }
   &__title {
     margin: $spacing-xs 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   &__info {
     margin-left: $spacing-base;
-    width: $xl-pourcentage;
+    width: $xxl-pourcent;
+    overflow: hidden;
   }
   &__plat {
     margin: $spacing-xs 0;
     font-size: $font-size-xss;
     font-weight: 200;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   &__price {
     margin: $spacing-xs 0;
@@ -179,22 +190,22 @@
     font-size: $font-size-xss;
     display: flex;
     align-items: flex-end;
-    width: $xxs-pourcentage;
+    width: $xxs-pourcent;
     justify-content: flex-end;
   }
   &__animation{
     display: none;
-    width: $xs-pourcentage;
-    background-color: #99E2D0;
+    width: $xs-pourcent;
+    background-color: $tertiaire;
     border-radius: 0 $spacing-base $spacing-base 0;
     &:hover{
       display: flex;
-      animation: left 2s;
+      animation: left 0.3s;
     }
   }
   &__logo{
     margin: auto;
-    color: white;
+    color: $color-white;
     &:hover{
      animation: rotate 1s;
     }
@@ -216,7 +227,7 @@
 
 @keyframes left{
   0% {width: 0%;}
-  100% {width: 20%;}
+  100% {width: $xs-pourcent;}
 }
 
 @keyframes rotate{

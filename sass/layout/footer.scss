@@ -1,12 +1,13 @@
 @import "./theme.scss";
 
 .footer{
-    background-color: rgb(43, 43, 43);
+    background-color: $back-color-footer;
     padding-left: $spacing-base;
     padding-top: $spacing-base;
     padding-bottom: $spacing-base;
+    position: relative;
     &__title{
-        color: white;
+        color: $color-white;
         font-family: Shrikhand;
     }
     &__nav{
@@ -14,12 +15,12 @@
         flex-direction: column;
     }
     &__link{
-        color: white;
+        color: $color-white;
         text-decoration: none;
         margin-bottom: $spacing-xs;
     }
     &__logo{
-        color: white;
+        color:$color-white;
         width: $width-footer-logo;
         padding-right: $spacing-xs;
         font-size: $font-size-xss;
@@ -30,5 +31,5 @@
 }
 .footer-menu{
     position: relative;
-    top: $top-footer-menu;
+    top: $top-footer;
 }

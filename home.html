@@ -18,53 +18,53 @@
   </head>
   <body>
     <div class="loading-page">
-      <span class="loading-page__quart"></span>
+      <div class="loading-page__quart"></div>
     </div>
-      <header>
-        <div class="header-title">
-          <img
-            class="header-title__logo"
-            src="/assets/restaurants/restaurants/logo/ohmyfood.png"
-            alt=""
-          />
+    <header class="header-home">
+      <div class="header-title">
+        <img
+          class="header-title__logo"
+          src="/assets/restaurants/restaurants/logo/ohmyfood.png"
+          alt=""
+        />
+      </div>
+      <div class="header-localisation">
+        <i class="header-localisation__icon fas fa-map-marker-alt"></i>
+        <h2 class="header-localisation__title">Paris,Belleville</h2>
+      </div>
+      <div class="header-search">
+        <h3 class="header-search__subtitle">
+          Réservez le menu qui vous convient
+        </h3>
+        <p class="header-search__text">
+          Découvrez des restaurants d'exception,séléctionnés par nos soins
+        </p>
+        <button class="header-search__button">Explorer nos restaurants</button>
+      </div>
+    </header>
+    <main class="main-home">
+      <h2 class="main-title">Fonctionnement</h2>
+      <div class="main-title__choice">
+        <div class="main-title__link">
+          <span class="main-title__number">1</span>
+          <i class="main-title__logo fas fa-mobile-alt"></i>
+          <p class="main-title__button">Choisissez un restaurant</p>
         </div>
-        <div class="header-localisation">
-          <i class="header-localisation__icon fas fa-map-marker-alt"></i>
-          <h2 class="header-localisation__title">Paris,Belleville</h2>
+        <div class="main-title__link">
+          <span class="main-title__number">2</span>
+          <i class="main-title__logo fas fa-list"></i>
+          <p class="main-title__button">Composez votre menu</p>
         </div>
-        <div class="header-search">
-          <h3 class="header-search__subtitle">
-            Réservez le menu qui vous convient
-          </h3>
-          <p class="header-search__text">
-            Découvrez des restaurants d'exception,séléctionnés par nos soins
-          </p>
-          <button class="header-search__button">Explorer nos restaurants</button>
+        <div class="main-title__link">
+          <span class="main-title__number">3</span>
+          <i class="main-title__logo fas fa-store"></i>
+          <p class="main-title__button">Dégustez au restaurant</p>
         </div>
-      </header>
-      <main>
-        <h2 class="main-title">Fonctionnement</h2>
-        <div class="main-title__choice">
-          <div class="main-title__link">
-            <span class="main-title__number">1</span>
-            <i class="main-title__logo fas fa-mobile-alt"></i>
-            <p class="main-title__button">Choisissez un restaurant</p>
-          </div>
-          <div class="main-title__link">
-            <span class="main-title__number">2</span>
-            <i class="main-title__logo fas fa-list"></i>
-            <p class="main-title__button">Composez votre menu</p>
-          </div>
-          <div class="main-title__link">
-            <span class="main-title__number">3</span>
-            <i class="main-title__logo fas fa-store"></i>
-            <p class="main-title__button">Dégustez au restaurant</p>
-          </div>
-        </div>
-        <h2 class="main-title">Restaurants</h2>
-        <div class="group-card">
-          <div class="card">
-              <a class="card__link" href="menu__palette.html">
+      </div>
+      <h2 class="main-title">Restaurants</h2>
+      <div class="group-card">
+        <div class="card">
+          <a class="card__link" href="menu__palette.html">
             <p class="card__new">Nouveau</p>
             <img
               class="card__img"
@@ -74,7 +74,7 @@
             <div class="card__info">
               <h3 class="card__title">La palette du goût</h3>
               <p class="card__text">Ménilmontant</p>
-  
+
               <div class="card__info__icon">
                 <svg
                   class="card__heart card__heart__empty"
@@ -140,11 +140,11 @@
                 </svg>
               </div>
             </div>
-            </a>
-          </div>
-  
-          <div class="card">
-              <a class="card__link" href="menu__enchante.html">
+          </a>
+        </div>
+
+        <div class="card">
+          <a class="card__link" href="menu__enchante.html">
             <p class="card__new">Nouveau</p>
             <img
               class="card__img"
@@ -188,7 +188,7 @@
                     </linearGradient>
                   </defs>
                 </svg>
-  
+
                 <svg
                   class="card__heart card__heart__full"
                   version="1.1"
@@ -220,10 +220,10 @@
                 </svg>
               </div>
             </div>
-            </a>
-          </div>
-          <div class="card">
-              <a class="card__link" href="menu__francais.html">
+          </a>
+        </div>
+        <div class="card">
+          <a class="card__link" href="menu__francais.html">
             <img
               class="card__img"
               src="/assets/restaurants/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
@@ -297,10 +297,10 @@
                 </svg>
               </div>
             </div>
-            </a>
-          </div>
-          <div class="card">
-              <a class="card__link" href="menu__delice.html">
+          </a>
+        </div>
+        <div class="card">
+          <a class="card__link" href="menu__delice.html">
             <img
               class="card__img"
               src="/assets/restaurants/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
@@ -309,7 +309,7 @@
             <div class="card__info">
               <h3 class="card__title">Le délice des sens</h3>
               <p class="card__text">Folie-Méricourt</p>
-  
+
               <div class="card__info__icon">
                 <svg
                   class="card__heart card__heart__empty"
@@ -375,29 +375,31 @@
                 </svg>
               </div>
             </div>
-            </a>
-          </div>
+          </a>
         </div>
-      </main>
-      <footer>
-        <div class="footer">
-          <h3 class="footer__title">ohmyfood</h3>
-  
-          <nav class="footer__nav">
-            <div class="footer__info">
-              <i class="footer__logo fas fa-utensils"></i>
-              <a class="footer__link" href="#">Proposer un restaurant</a>
-            </div>
-            <div class="footer__info">
-              <i class="footer__logo fas fa-hands-helping"></i>
-              <a class="footer__link" href="#">Devenir partenaire</a>
-            </div>
-  
-            <a class="footer__link" href="#">Mentions légales</a>
-            <a class="footer__link" href="mailto:
-            ohmyfood@gmail.com">Contact</a>
-          </nav>
+      </div>
+    </main>
+    <footer class="footer">
+      <h3 class="footer__title">ohmyfood</h3>
+
+      <nav class="footer__nav">
+        <div class="footer__info">
+          <i class="footer__logo fas fa-utensils"></i>
+          <a class="footer__link" href="#">Proposer un restaurant</a>
         </div>
+        <div class="footer__info">
+          <i class="footer__logo fas fa-hands-helping"></i>
+          <a class="footer__link" href="#">Devenir partenaire</a>
+        </div>
+
+        <a class="footer__link" href="#">Mentions légales</a>
+        <a
+          class="footer__link"
+          href="mailto:
+            ohmyfood@gmail.com"
+          >Contact</a
+        >
+      </nav>
     </footer>
   </body>
 </html>
