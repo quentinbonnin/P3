@@ -1,4 +1,4 @@
-@import "./theme.scss";
+@import "../theme.scss";
 
 .header-home{
   position: relative;
@@ -6,7 +6,7 @@
 .header-title {
   display: flex;
   width: $xl-pourcent;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   padding-top: $spacing-base;
   &__logo {
     width: $mid-pourcent;
