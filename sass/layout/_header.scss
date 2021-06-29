@@ -1,5 +1,6 @@
-@import "../theme.scss";
-
+@import "../abstracts/variables";
+@import "../components/buttons";
+@import "../abstracts/mixins";
 .header-home{
   position: relative;
 }
@@ -14,9 +15,7 @@
   }
 }
 .header-localisation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include displayCenter;
   box-shadow: $header-localisation-box;
   background-color: $back-color-header-localisation;
   margin-bottom: $spacing-base;
@@ -45,25 +44,7 @@
     font-weight: 200;
   }
   &__button {
-    width: $width-button;
-    display: flex;
-    justify-content: center;
-    font-size: $font-size-xs;
-    color: $color-white;
-    height: $height-button;
-    align-items: center;
-    border-radius: $spacing-xl;
-    background: linear-gradient(
-      350deg,
-      $first-color-button 37%,
-      $second-color-button 98%
-    );
-    border: none;
-    box-shadow: $box-shadow;
-    &:hover{
-        opacity: $opacity-header;
-        box-shadow: $inset-box-shadow;
-    }
+    @extend %button;
   }
 }
 .loading-page{

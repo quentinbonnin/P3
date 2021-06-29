@@ -1,5 +1,5 @@
-@import "./theme.scss";
-
+@import "../abstracts/variables";
+@import "../components/card";
 .main-home{
   position: relative;
 }
@@ -50,14 +50,7 @@
     margin-right: auto;
 }
 .card{
-    box-shadow: $box-shadow;
-    border-radius: $spacing-base;
-    position: relative;
-    margin-bottom: $spacing-base;
-    &:hover{
-      transform: scale(1.02);
-      transition: 0.3s;
-    }
+    @extend %card;
     &__info{
         position: relative;
     }
@@ -123,40 +116,12 @@
     width: $spacing-xl;
   }
   &__button {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    height: $spacin-xxl;
-    align-items: center;
-    width: $mid-pourcent;
-    justify-content: center;
-    border-radius: $spacing-xl;
-    color: $color-white;
-    border: none;
-    background: linear-gradient(
-      350deg,
-      $first-color-button 37%,
-      $second-color-button 98%
-    );
-    box-shadow: $box-shadow;
-    margin-top: $spacing-xl;
-    margin-bottom: $spacing-xl;
-    &:hover {
-      opacity: 0.8;
-      box-shadow: $inset-box-shadow;
-    }
+    @extend %button__menu;
   }
 }
 .main-card {
-  box-shadow: $box-shadow;
-  border-radius: $spacing-base;
-  margin: 0 $spacing-xs;
-  display: flex;
-  margin-bottom: $spacing-base;
-  background-color: $color-white;
-  animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  @extend %card__menu;
   &:hover{
-    transform: scale(1.01);
     .main-card__logo{
       animation: rotate 1s;
     }

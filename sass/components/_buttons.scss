@@ -1,0 +1,48 @@
+@import "../abstracts/variables";
+%button {
+    width: $width-button;
+    display: flex;
+    justify-content: center;
+    font-size: $font-size-xs;
+    color: $color-white;
+    height: $height-button;
+    align-items: center;
+    border-radius: $spacing-xl;
+    background: linear-gradient(
+      350deg,
+      $first-color-button 37%,
+      $second-color-button 98%
+    );
+    border: none;
+    box-shadow: $box-shadow;
+    &:hover{
+        opacity: $opacity-header;
+        box-shadow: $inset-box-shadow;
+    }
+}
+
+%button__menu{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: $spacin-xxl;
+    align-items: center;
+    width: $mid-pourcent;
+    justify-content: center;
+    border-radius: $spacing-xl;
+    color: $color-white;
+    border: none;
+    background: linear-gradient(
+      350deg,
+      $first-color-button 37%,
+      $second-color-button 98%
+    );
+    box-shadow: $box-shadow;
+    margin-top: $spacing-xl;
+    margin-bottom: $spacing-xl;
+    &:hover {
+      opacity: 0.8;
+      box-shadow: $inset-box-shadow;
+    }
+}
+   

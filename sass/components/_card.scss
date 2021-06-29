@@ -1,0 +1,22 @@
+@import "../abstracts/variables";
+
+%card{
+    box-shadow: $box-shadow;
+    border-radius: $spacing-base;
+    position: relative;
+    margin-bottom: $spacing-base;
+    &:hover{
+      transform: scale(1.02);
+      transition: 0.3s;
+    }
+}
+
+%card__menu{
+  box-shadow: $box-shadow;
+  border-radius: $spacing-base;
+  margin: 0 $spacing-xs;
+  display: flex;
+  margin-bottom: $spacing-base;
+  background-color: $color-white;
+  animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}

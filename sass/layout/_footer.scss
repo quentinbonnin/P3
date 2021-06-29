@@ -1,5 +1,5 @@
-@import "./theme.scss";
-
+@import "../abstracts/variables";
+@import "../components/link";
 .footer{
     background-color: $back-color-footer;
     padding-left: $spacing-base;
@@ -15,9 +15,7 @@
         flex-direction: column;
     }
     &__link{
-        color: $color-white;
-        text-decoration: none;
-        margin-bottom: $spacing-xs;
+        @extend %link;
     }
     &__logo{
         color:$color-white;
