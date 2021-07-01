@@ -1,0 +1,26 @@
+@import "../abstracts/variables";
+.footer-menu{
+    position: relative;
+    top: $top-footer;
+}
+
+.header{
+    display: flex;
+    margin-top: $spacing-xs;
+    margin-bottom: $spacing-xs;
+    align-items: center;
+    &__img{
+        margin-left: $spacing-xs;
+    }
+    &__logo{
+        width: $mid-pourcent;
+        margin: auto;
+    }
+    &__restaurant{
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        min-height: $min-max-height-header-resto;
+        max-height: $min-max-height-header-resto;
+    }
+}

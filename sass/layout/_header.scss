@@ -1,4 +1,5 @@
 @import "../abstracts/variables";
+@import "../components/animation";
 @import "../components/buttons";
 @import "../abstracts/mixins";
 .header-home{
@@ -51,10 +52,8 @@
   width: 100vw;
   position: fixed;
   height: 100vh;
-  justify-content: center;
-  align-items: center;
   background-color: $color-white;
-  display: flex;
+  @include displayCenter;
   z-index: 1;
   animation: loading 1.5s linear forwards;
   &__quart{
@@ -79,41 +78,4 @@
     animation: spin 1s linear 0s infinite;
   }
   }
-.header{
-    display: flex;
-    margin-top: $spacing-xs;
-    margin-bottom: $spacing-xs;
-    align-items: center;
-    &__img{
-        margin-left: $spacing-xs;
-    }
-    &__logo{
-        width: $mid-pourcent;
-        margin: auto;
-    }
-    &__restaurant{
-        width: 100%;
-        position: absolute;
-        object-fit: cover;
-        min-height: $min-max-height-header-resto;
-        max-height: $min-max-height-header-resto;
-    }
-}
   
-  @keyframes spin {
-    0%{transform: rotate(0deg); border-top-color: $primary; opacity: 1;}
-    50%{border-top-color: $secondary;}
-    100%{transform: rotate(360deg); border-top-color: $tertiaire;}
-  }
-  @keyframes refresh{
-    0%{opacity: 1;}
-    99%{opacity: 1;}
-    100%{opacity: 0;}
-  }
-  @keyframes loading {
-    0%{z-index: 1;}
-    99%{z-index: 1;}
-    100%{z-index: -1;}
-  }
-   
- 
