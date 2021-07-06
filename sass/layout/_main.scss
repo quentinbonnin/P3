@@ -1,27 +1,14 @@
-@import "../abstracts/variables";
-@import "../components/card";
+
 
 .main-title {
   margin-left: $spacing-base;
   &__link {
-    width: $xxl-pourcent;
-    display: flex;
-    height: $height-link;
-    align-items: center;
-    border: none;
-    border-radius: $spacing-base;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: $spacing-base;
-    box-shadow: $box-shadow;
-    &:hover{
-      background-color: $color-hover-link;
+    @extend %link__index;
       .main-title__logo{
         color: $primary;
       }
     }
-  }
+  
   &__number {
     position: absolute;
     left: $position-number;

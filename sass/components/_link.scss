@@ -1,8 +1,25 @@
-@import "../abstracts/variables";
-
 
 %link{
     color: $color-white;
     text-decoration: none;
     margin-bottom: $spacing-xs;
 }
+
+%link__index{
+    width: $xxl-pourcent;
+    display: flex;
+    height: $height-link;
+    align-items: center;
+    border: none;
+    border-radius: $spacing-base;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $spacing-base;
+    box-shadow: $box-shadow;
+    &:hover{
+      background-color: $color-hover-link;
+      transition: .5s;
+    }
+}
+    
