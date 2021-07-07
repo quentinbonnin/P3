@@ -49,19 +49,6 @@
       color: $color-black;
       text-decoration: none;
     }
-    &__heart{
-        width: $width-heart;
-        position: absolute;
-        right: $spacing-xl;
-        bottom: $spacing-xl;
-        &__full{
-            fill: transparent;
-            &:hover{
-               animation: color 1s linear 0s;
-               fill: url(#fill-hover); 
-            }
-        }
-    }
     &__title{
         margin: $spacing-base $spacing-xs $spacing-xs $spacing-xs;
     }
