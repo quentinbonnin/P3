@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+    .main-title__choice{
+        display: flex;
+        margin-left: $spacing-xl;
+        .main-title__link{
+            margin-right: $spacing-xl;
+        }
+    }
+    .group-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: $spacing-base;
+    }
+}
+
+@media (min-width:1024px) {
+    .main__group-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
