@@ -457,7 +457,7 @@ template {
 
 .main {
   position: relative;
-  top: 9rem;
+  top: 15rem;
   border-radius: 1rem;
   width: 100%;
   background-color: #f5f4f4;
@@ -789,7 +789,7 @@ template {
 
 .footer-menu {
   position: relative;
-  top: 9rem;
+  top: 15rem;
 }
 
 .header {
@@ -810,7 +810,7 @@ template {
   position: absolute;
   object-fit: cover;
   min-height: 11rem;
-  max-height: 11rem;
+  max-height: 17rem;
 }
 
 /*# sourceMappingURL=style.css.map */
