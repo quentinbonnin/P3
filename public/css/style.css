@@ -541,6 +541,18 @@ template {
   fill: url(#fill-hover);
 }
 
+.main-card__starters {
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+
+.main-card__dish {
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
+}
+
+.main-card__dessert {
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+}
+
 .header-home {
   position: relative;
 }
@@ -699,6 +711,7 @@ template {
 }
 .header-search__button {
   width: 75%;
+  max-width: 15rem;
   display: flex;
   justify-content: center;
   font-size: 1rem;
@@ -723,6 +736,7 @@ template {
   height: 3rem;
   align-items: center;
   width: 50%;
+  max-width: 15rem;
   justify-content: center;
   border-radius: 2rem;
   color: #ffffff;
@@ -756,7 +770,6 @@ template {
   display: flex;
   margin-bottom: 1rem;
   background-color: #ffffff;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
 }
 
 .footer__link {
@@ -802,7 +815,8 @@ template {
   margin-left: 0.5rem;
 }
 .header__logo {
-  width: 50%;
+  width: 20%;
+  min-width: 10rem;
   margin: auto;
 }
 .header__restaurant {

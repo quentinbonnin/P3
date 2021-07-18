@@ -13,7 +13,8 @@
         margin-left: $spacing-xs;
     }
     &__logo{
-        width: $mid-pourcent;
+        width: $xs-pourcent;
+        min-width: $min-width-logo;
         margin: auto;
     }
     &__restaurant{

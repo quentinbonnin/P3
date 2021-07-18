@@ -1,6 +1,7 @@
 
 %button {
     width: $width-button;
+    max-width: $max-width-button;
     display: flex;
     justify-content: center;
     font-size: $font-size-xs;
@@ -29,6 +30,7 @@
     height: $spacin-xxl;
     align-items: center;
     width: $mid-pourcent;
+    max-width: $max-width-button;
     justify-content: center;
     border-radius: $spacing-xl;
     color: $color-white;
